@@ -135,7 +135,6 @@ function changeBottom() {
 }
 changeBottom();
 addPhotos();
-
 $('#fullpage').fullpage({
     sectionsColor: ['#22c3aa', '#7baece', '#fff', '#7baece'],
     navigation: true,
