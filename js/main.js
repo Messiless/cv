@@ -1,18 +1,18 @@
 var data = [
     {
         img: 'pic1.png',
-        caption: '2016年手游数据报告(扫描二维码)',
-        site: 'https://github.com/onlyfzz/webapp'
+        caption: 'web通讯录',
+        site: 'https://github.com/Messiless/project'
     },
     {
-        img: 'pic2.jpg',
-        caption: 'web版网易云音乐(点击进入)',
-        site: 'https://github.com/onlyfzz/music-player-PC'
+        img: 'pic2.png',
+        caption: '分页控制',
+        site: 'https://github.com/Messiless/Idea/tree/master/day19'
     },
     {
         img: 'pic3.png',
-        caption: 'Vue2.0创建外卖app(扫描二维码)',
-        site: 'https://github.com/onlyfzz/sell-app'
+        caption: '查找加分页',
+        site: 'https://github.com/Messiless/Idea/tree/master/day19_page_query'
     },
     {
         img: 'pic4.jpg',
