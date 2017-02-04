@@ -15,9 +15,9 @@ var data = [
         site: 'https://github.com/Messiless/Idea/tree/master/day19_page_query'
     },
     {
-        img: 'pic4.jpg',
-        caption: '构建商城整站(点击进入)',
-        site: 'https://github.com/onlyfzz/complete-website'
+        img: 'wzc.jpg',
+        caption: '照片',
+        
     }
 ];
 var flag = true;
