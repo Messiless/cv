@@ -1,43 +1,43 @@
 var data = [
     {
         img: 'pic1.png',
-        caption: '2016ÄêÊÖÓÎÊı¾İ±¨¸æ(É¨Ãè¶şÎ¬Âë)',
+        caption: '2016å¹´æ‰‹æ¸¸æ•°æ®æŠ¥å‘Š(æ‰«æäºŒç»´ç )',
         site: 'https://github.com/onlyfzz/webapp'
     },
     {
         img: 'pic2.jpg',
-        caption: 'web°æÍøÒ×ÔÆÒôÀÖ(µã»÷½øÈë)',
+        caption: 'webç‰ˆç½‘æ˜“äº‘éŸ³ä¹(ç‚¹å‡»è¿›å…¥)',
         site: 'https://github.com/onlyfzz/music-player-PC'
     },
     {
         img: 'pic3.png',
-        caption: 'Vue2.0´´½¨ÍâÂôapp(É¨Ãè¶şÎ¬Âë)',
+        caption: 'Vue2.0åˆ›å»ºå¤–å–app(æ‰«æäºŒç»´ç )',
         site: 'https://github.com/onlyfzz/sell-app'
     },
     {
         img: 'pic4.jpg',
-        caption: '¹¹½¨ÉÌ³ÇÕûÕ¾(µã»÷½øÈë)',
+        caption: 'æ„å»ºå•†åŸæ•´ç«™(ç‚¹å‡»è¿›å…¥)',
         site: 'https://github.com/onlyfzz/complete-website'
     }
 ];
 var flag = true;
-//µã»÷µÄº£±¨¾ÓÖĞ¿ØÖÆ
+//ç‚¹å‡»çš„æµ·æŠ¥å±…ä¸­æ§åˆ¶
 function turn(ele) {
     var n = ele.attr('id').split("-")[1];
     var cls = ele.className;
-    /*¼ì²âµã»÷µÄº£±¨ÓĞÃ»ÓĞ¾ÓÖĞ,Ã»ÓĞÔòÈÃÆä¾ÓÖĞ*/
+    /*æ£€æµ‹ç‚¹å‡»çš„æµ·æŠ¥æœ‰æ²¡æœ‰å±…ä¸­,æ²¡æœ‰åˆ™è®©å…¶å±…ä¸­*/
     if (!/center/.test(cls)) {
         return resort(n);
     }
 }
-//È¡Ò»¸ö[]·¶Î§ÄÚµÄËæ»úÊı
+//å–ä¸€ä¸ª[]èŒƒå›´å†…çš„éšæœºæ•°
 function random(range) {
     var max = Math.max(range[0],range[1]);
     var min = Math.min(range[0],range[1]);
     var diff = max - min + 1;
     return Math.floor(Math.random() * diff + min);
 }
-//¼ÆËã×óÓÒ·ÖÇøµÄ·¶Î§,range¶ÔÏóÀ´´æ´¢·¶Î§
+//è®¡ç®—å·¦å³åˆ†åŒºçš„èŒƒå›´,rangeå¯¹è±¡æ¥å­˜å‚¨èŒƒå›´
 function range(){
     var range = {
         left:
@@ -47,12 +47,12 @@ function range(){
             {x:[],
              y:[]}
     };
-    //wrapµÄ¿í¸ß
+    //wrapçš„å®½é«˜
     var wrap = {
         w: $("#wrap").width(),
         h: $("#wrap").height()
     };
-    //photoµÄ¿í¸ß
+    //photoçš„å®½é«˜
     var photo={
         w: $(".photo").eq(0).width(),
         h: $(".photo").eq(0).height()
@@ -63,11 +63,11 @@ function range(){
     range.right.y = [0 - photo.h/4, wrap.h - photo.h/2];
     return range;
 }
-//äÖÈ¾º£±¨°æÃæ
+//æ¸²æŸ“æµ·æŠ¥ç‰ˆé¢
 function resort(n) {
     var _photos = $(".photo");
     var photoArr = [];
-    //Çå³ıÑùÊ½,È»ºó¸ø#photo-n¸³ÓèÒ»¸öcenterÑùÊ½
+    //æ¸…é™¤æ ·å¼,ç„¶åç»™#photo-nèµ‹äºˆä¸€ä¸ªcenteræ ·å¼
     for(var i = 0;i<_photos.length;i++){
         _photos.eq(i).removeClass('center');
         _photos.eq(i).css({
@@ -80,11 +80,11 @@ function resort(n) {
     var photo = $("#photo-"+n);
     photo.addClass('center');
     photoArr.splice(n,1);
-    //°Ñº£±¨·ÖÎª×óÓÒÁ½¸ö²¿·Ö
+    //æŠŠæµ·æŠ¥åˆ†ä¸ºå·¦å³ä¸¤ä¸ªéƒ¨åˆ†
     var photos_left = photoArr.splice(0,Math.ceil(photoArr.length/2));
     var photos_right = photoArr;
     var ranges = range();
-    /*ÎªÃ»ÓĞ±»Ñ¡ÖĞµÄÃ¿¸öphotoÌí¼ÓÎ»ÖÃºÍĞı×ªÑùÊ½*/
+    /*ä¸ºæ²¡æœ‰è¢«é€‰ä¸­çš„æ¯ä¸ªphotoæ·»åŠ ä½ç½®å’Œæ—‹è½¬æ ·å¼*/
     photos_left.forEach(function(item){
         item.css({
             left: random(ranges.left.x)+"px",
@@ -99,7 +99,7 @@ function resort(n) {
             transform: 'rotate('+random([-150,150])+'deg) scale(1)'
         });
     });
-    /*Îª°´Å¥Ìí¼ÓÑùÊ½*/
+    /*ä¸ºæŒ‰é’®æ·»åŠ æ ·å¼*/
     var navs = $(".i");
     for(var i=0;i<navs.length;i++){
         navs.removeClass('i_current');
@@ -107,7 +107,7 @@ function resort(n) {
     $("#nav_"+n).addClass('i_current');
 }
 
-/*Ìí¼ÓÊı¾İ*/
+/*æ·»åŠ æ•°æ®*/
 function addPhotos() {
     var wrap = $("#wrap");
     var old_html = wrap.html();
