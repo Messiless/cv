@@ -1,4 +1,4 @@
-var data = [
+﻿var data = [
     {
         img: 'pic1.png',
         caption: '2016年手游数据报告(扫描二维码)',
