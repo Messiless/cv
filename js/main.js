@@ -1,22 +1,22 @@
 var data = [
     {
-        img: 'pic1.png',
-        caption: 'web通讯录',
-        site: 'https://github.com/Messiless/project'
+        img: 'pic1.jpg',
+        caption: 'dream',
+        site: ''
     },
     {
-        img: 'pic2.png',
-        caption: '分页控制',
-        site: 'https://github.com/Messiless/Idea/tree/master/day19'
+        img: 'pic2.jpg',
+        caption: 'dream',
+        site: ''
     },
     {
-        img: 'pic3.png',
-        caption: '查找加分页',
-        site: 'https://github.com/Messiless/Idea/tree/master/day19_page_query'
+        img: 'pic3.jpg',
+        caption: 'dream',
+        site: ''
     },
     {
         img: 'wzc.jpg',
-        caption: '照片',
+        caption: 'my',
         
     }
 ];
