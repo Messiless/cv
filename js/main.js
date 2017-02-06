@@ -2,17 +2,17 @@
     {
         img: 'pic1.jpg',
         caption: 'dream',
-        site: ''
+       
     },
     {
         img: 'pic2.jpg',
         caption: 'dream',
-        site: ''
+        
     },
     {
         img: 'pic3.jpg',
         caption: 'dream',
-        site: ''
+       
     },
     {
         img: 'wzc.jpg',
