@@ -1,4 +1,4 @@
-var data = [
+﻿var data = [
     {
         img: 'pic1.jpg',
         caption: 'dream',
