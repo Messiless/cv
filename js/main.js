@@ -1,17 +1,17 @@
 ﻿var data = [
     {
         img: 'pic1.jpg',
-        caption: 'dream',
+        caption: 'work',
         site:'https://github.com/Messiless/cv/blob/master/img/pic1.jpg'
     },
     {
         img: 'pic2.jpg',
-        caption: 'dream',
+        caption: 'work',
          site:'https://github.com/Messiless/cv/blob/master/img/pic2.jpg'
     },
     {
         img: 'pic3.jpg',
-        caption: 'dream',
+        caption: 'work',
         site:'https://github.com/Messiless/cv/blob/master/img/pic3.jpg'
     },
     {
